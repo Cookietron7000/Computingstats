@@ -16,5 +16,7 @@ public class Loan
   }
 
   public int getID(){return ID;}
+  public double getLoanAmount(){return loanAmount;}
   public int getDaysToFund(){return daysToFund;}
+  public int getNumLenders(){return numLenders;}
 }
