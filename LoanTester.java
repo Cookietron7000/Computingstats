@@ -1,6 +1,6 @@
 public class LoanTester {
    public static void main(String[] args) {
-//       Loan testOne = new Loan(12345, 280.00, "Japan", 5, 8);
+       Loan testOne = new Loan(12345, 280.00, "Japan", 5, 8);
 //       System.out.println(testOne.getID() + " == 12345");
 //       System.out.println(testOne.getLoanAmount() + " == 280.0");
 //       System.out.println(testOne.getCountry() + " == Japan");
