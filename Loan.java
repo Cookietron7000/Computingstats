@@ -4,7 +4,7 @@ public class Loan
   private double loanAmount;
   private String country;
   private int daysToFund;
-  int numLenders;
+  private int numLenders;
     
   public Loan( int ID, double loanAmount, String country, int daysToFund,
   int numLenders){
