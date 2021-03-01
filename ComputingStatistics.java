@@ -10,8 +10,8 @@ public class ComputingStatistics{
    //Creates a new ComputingStatistics object with the data passed in
    public ComputingStatistics(ArrayList<Loan> d){data = d;}
 
-   //Calclates the total amount funded from all of the loans in the file.
-   //@return the total loan amount.
+   //Calclates the total amount funded from all of the loans in the file
+   //@return the total loan amount
    public double totalAmount(){
       double amount = 0.0;
       Loan loan;
@@ -21,4 +21,6 @@ public class ComputingStatistics{
       }
       return amount;
    }
+
+   //returns 
 }
