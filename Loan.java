@@ -18,4 +18,7 @@ public class Loan
   public double getLoanAmount(){return loanAmount;}
   public int getDaysToFund(){return daysToFund;}
   public int getNumLenders(){return numLenders;}
+
+  public void setID(int id){ID = id;}
+  public void setDaySToFund(int days){daysToFund = days;}
 }
