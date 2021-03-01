@@ -13,12 +13,8 @@ public class ComputingStatistics{
    //Calclates the total amount funded from all of the loans in the file
    //@return the total loan amount
    public double totalAmount(){
-      double amount = 0.0;
-      Loan loan;
-      for(int i = 0; i < data.size(); i++) {
-         loan = data.get(i);
-         amount = amount + loan.getLoanAmount();
-      }
+      double amount = 0;
+      for(Loan loan:data){amount+=loan.getLoanAmount();}
       return amount;
    }
 
