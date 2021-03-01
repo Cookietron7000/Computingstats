@@ -29,7 +29,7 @@ public class ComputingStatistics{
    public double smallestLoan(){
       double smallest = 0.0;
       for(Loan loan:data){
-         if(loan.getLoanAmount()<smallest){smallest=loan.getLoanAmount()}
+         if(loan.getLoanAmount()<smallest){smallest=loan.getLoanAmount();}
       }
       return smallest;
    }
