@@ -22,5 +22,15 @@ public class ComputingStatistics{
       return amount;
    }
 
-   //returns 
+   //returns the average loan amount
+   public double avgLoan(){return totalAmount()/data.size();}
+
+   //returns the smallest loan
+   public double smallestLoan(){
+      double smallest = 0.0;
+      for(Loan loan:data){
+         if(loan.getLoanAmount()<smallest){smallest=loan.getLoanAmount()}
+      }
+      return smallest;
+   }
 }
