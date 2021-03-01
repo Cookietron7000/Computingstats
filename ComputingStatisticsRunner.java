@@ -20,7 +20,7 @@ public class ComputingStatisticsRunner {
       System.out.println("Total amount: " + analysis.totalAmount());                  //Level 1 Question 1
       System.out.println("Average loan amount: " + analysis.avgLoan());               //Level 1 Question 2
 //       System.out.println("Largest loan amount: " + analysis.largestLoan());           //Level 1 Question 3
-//       System.out.println("Smallest loan amount: " + analysis.smallestLoan());         //Level 1 Question 4
+      System.out.println("Smallest loan amount: " + analysis.smallestLoan());         //Level 1 Question 4
 //       System.out.println("The country with the largest loan amount: " + analysis.largestLoanCountry());     //Level 1 Question 5
 //       System.out.println("The country with smallest loan amount: " + analysis.smallestLoanCountry());       //Level 1 Question 6
       

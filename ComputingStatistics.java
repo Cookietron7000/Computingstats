@@ -27,7 +27,7 @@ public class ComputingStatistics{
 
    //returns the smallest loan
    public double smallestLoan(){
-      double smallest = 0.0;
+      double smallest = Double.POSITIVE_INFINITY;
       for(Loan loan:data){
          if(loan.getLoanAmount()<smallest){smallest=loan.getLoanAmount();}
       }
