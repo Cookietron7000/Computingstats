@@ -26,5 +26,6 @@ public class Loan
   public void setLoanAmount(double loan){loanAmount = loan;}
   public void setNumLenders(int lenders){numLenders = lenders;}
   //toString
-  public String toString(){return "ID: " + ID + " amount: " + loanAmount + " country: " + country + " days to fund: " + daysToFund + " number of lenders: " + numLenders;}
+  public String toString(){return "ID: "+ID+" amount: "+loanAmount+" country: "+country+
+  " days to fund: "+daysToFund+" number of lenders: "+numLenders;}
 }
