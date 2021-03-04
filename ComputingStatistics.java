@@ -29,4 +29,11 @@ public class ComputingStatistics{
       }
       return smallest;
    }
+   public double largestLoan(){
+       double largest = Double.POSITIVE_INFINITY;
+       for(Loan loan:data){
+           if(loan.getLoanAmount()>largest){largest=loan.getLoanAmount();}
+        }
+        return largest;
+    }
 }
