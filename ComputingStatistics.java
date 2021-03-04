@@ -47,4 +47,14 @@ public class ComputingStatistics{
         }
         return smallCountry;
    }
+   public String largestLoanCountry(){
+       String largestCountry = " ";
+       double largestLoan = largestLoan();
+       for(Loan loan:data){
+           if(loan.getLoanAmount() == largestLoan){
+               largestCountry = loan.getCountry();
+            }
+        }
+        return largestCountry;
+    }
 }
