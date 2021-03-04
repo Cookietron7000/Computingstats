@@ -29,8 +29,9 @@ public class ComputingStatistics{
       }
       return smallest;
    }
+   //returns the largest loan
    public double largestLoan(){
-       double largest = Double.POSITIVE_INFINITY;
+       double largest = Double.NEGATIVE_INFINITY;
        for(Loan loan:data){
            if(loan.getLoanAmount()>largest){largest=loan.getLoanAmount();}
         }
