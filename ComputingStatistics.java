@@ -37,8 +37,9 @@ public class ComputingStatistics{
         }
         return largest;
     }
-    public String smallestLoanCountry(double smallestLoan){
+    public String smallestLoanCountry(){
         String smallCountry = " ";
+        double smallestLoan = smallestLoan();
         for(Loan loan:data){
             if(loan.getLoanAmount() == smallestLoan){
                 smallCountry = loan.getCountry();
