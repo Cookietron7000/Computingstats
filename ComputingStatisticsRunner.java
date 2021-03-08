@@ -27,7 +27,7 @@ public class ComputingStatisticsRunner {
 //       System.out.println("Average days to fund loan request: " + analysis.avgDaysToFund());                 //Level 2 Question 1
        System.out.println("The largest loan funded in Vietnam: " + analysis.largestLoan("Vietnam"));         //Level 2 Question 2
       System.out.println("Average loan amount in the Philippines: " + analysis.avgLoan("Philippines"));     //Level 2 Question 3
-//       System.out.println("The country with the longest to fund loan: " + analysis.longestToFundCountry());  //Level 2 Question 4
+       System.out.println("The country with the longest to fund loan: " + analysis.longestToFundCountry());  //Level 2 Question 4
        String mostLoans = "";
        if (analysis.loansFunded("El Salvador") > analysis.loansFunded("Kenya"))
            mostLoans = "El Salvador";

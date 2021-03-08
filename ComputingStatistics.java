@@ -96,6 +96,18 @@ public class ComputingStatistics{
         return largestLoan; // returns the largest loan from that country
 
     }
+    public String longestToFundCountry(){//Taylor-bug where the string variable is unchanged within the function
+        String longestToFund = " ";
+        int longest = 0;//defines the variables to determine the longest time to fund
+        for (Loan loan: data){//iterates through the data
+            if(loan.getDaysToFund()>longest)//checks to see what is the longest time
+            {
+                longest=loan.getDaysToFund();//replaces the current time with the new longest time
+                longestToFund = loan.getCountry();//replaces the current country name with the new longest time to fund country name
+            }
+        }
+        return longestToFund; //returns the country name with the longest time to fund
+    }
     //variance
     public double variance(){
         return 0.0;
