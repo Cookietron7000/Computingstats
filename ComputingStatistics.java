@@ -74,15 +74,26 @@ public class ComputingStatistics{
         avgLoan = avgLoan / counter;
         return avgLoan;
     }
-    public int loansFunded(String countryNm){
+
+    public int loansFunded(String countryNm){// Jaden
         int loansFunded = 0;
-        for (Loan loan:data){
+        for (Loan loan:data){ 
             if(loan.getCountry().equals(countryNm)){
-                if(loan.getLoanAmount() > 0){
+                if(loan.getLoanAmount() > 0){//Sifts through the data
                     loansFunded = loansFunded + 1;
                 }
             }
         }
         return loansFunded;
+    }
+    public double largestLoan(String countryNm){//Taylor
+        double largestLoan = 0; //defines a variable to hold the loan amount
+        for (Loan loan: data){ //iterates through the data
+            if(loan.getCountry().equals(countryNm)){ //sifts out the other countries to get the specific one
+                if(loan.getLoanAmount()>largestLoan){largestLoan=loan.getLoanAmount();} //gets the largest loan from the specific country
+            }
+        }
+        return largestLoan; // returns the largest loan from that country
+
     }
 }
