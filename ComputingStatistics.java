@@ -74,4 +74,15 @@ public class ComputingStatistics{
         avgLoan = avgLoan / counter;
         return avgLoan;
     }
+    public int loansFunded(String countryNm){
+        int loansFunded = 0;
+        for (Loan loan:data){
+            if(loan.getCountry().equals(countryNm)){
+                if(loan.getLoanAmount() > 0){
+                    loansFunded = loansFunded + 1;
+                }
+            }
+        }
+        return loansFunded;
+    }
 }
