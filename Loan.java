@@ -11,7 +11,7 @@ public class Loan
     this.ID = ID;
     this.loanAmount = loanAmount;
     this.country = country;
-    this.daysToFund = daysToFund/86400; //assuming input in seconds
+    this.daysToFund = daysToFund/878400; //assuming input in seconds
     this.numLenders = numLenders;
   }
   //getters

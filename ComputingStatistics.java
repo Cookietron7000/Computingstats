@@ -99,18 +99,32 @@ public class ComputingStatistics{
     public String longestToFundCountry(){//Taylor-bug where the string variable is unchanged within the function
         String longestToFund = " ";
         int longest = 0;//defines the variables to determine the longest time to fund
-        for (Loan loan: data){//iterates through the data
-            if(loan.getDaysToFund()>longest)//checks to see what is the longest time
+        for (Loan loan:data){//iterates through the data
+            if(loan.getDaysToFund() > longest)//checks to see what is the longest time
             {
-                longest=loan.getDaysToFund();//replaces the current time with the new longest time
+                longest = loan.getDaysToFund();//replaces the current time with the new longest time
                 longestToFund = loan.getCountry();//replaces the current country name with the new longest time to fund country name
             }
         }
         return longestToFund; //returns the country name with the longest time to fund
     }
     //variance
-    public double variance(){
-        return 0.0;
+    public double variance(){//Jaden
+        double variance = 0.0;
+        double average = 0.0;
+        double counter = 1.0;
+        double loana = 0.0;
+        for(Loan loan:data){ //get the average 
+            average = average + loan.getLoanAmount();
+            counter = counter + 1;
+        }
+        average = average / counter;
+        for(Loan loan:data){// the rest of the equation 
+            loana = loan.getLoanAmount() - average;
+            variance = variance + (loana * loana);
+        }
+        variance = variance / counter; //final touch
+        return variance;
     }
     //standard deviation (the square root of the variance)
     public double standardDeviation(){return Math.sqrt(variance());}
