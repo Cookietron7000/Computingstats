@@ -79,9 +79,9 @@ public class ComputingStatistics{
         int loansFunded = 0;
         for (Loan loan:data){ 
             if(loan.getCountry().equals(countryNm)){
-                if(loan.getLoanAmount() > 0){//Sifts through the data
-                    loansFunded = loansFunded + 1;
-                }
+                //Sifts through the data
+                loansFunded = loan.getNumLenders();
+                
             }
         }
         return loansFunded;
