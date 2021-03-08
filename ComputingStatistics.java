@@ -62,5 +62,16 @@ public class ComputingStatistics{
         for(Loan loan:data){totalDays+=loan.getDaysToFund();}
         return (int)(double)totalDays/data.size();
     }
-
+    public double avgLoan(String countryNm){//Jaden
+        double avgLoan = 0.0;
+        double counter = 1.0;//to divide loan by
+        for(Loan loan:data){
+            if(loan.getCountry().equals(countryNm)){ //sifts through data
+                counter = counter + 1;
+                avgLoan = avgLoan + loan.getLoanAmount();
+            }
+        }
+        avgLoan = avgLoan / counter;
+        return avgLoan;
+    }
 }
