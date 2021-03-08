@@ -47,7 +47,7 @@ public class ComputingStatistics{
         }
         return smallCountry;
    }
-   public String largestLoanCountry(){
+    public String largestLoanCountry(){
        String largestCountry = " ";
        double largestLoan = largestLoan();
        for(Loan loan:data){
@@ -57,4 +57,10 @@ public class ComputingStatistics{
         }
         return largestCountry;
     }
+    public int avgDaysToFund(){
+        int totalDays = 0;
+        for(Loan loan:data){totalDays+=loan.getDaysToFund();}
+        return (int)(double)totalDays/data.size();
+    }
+
 }

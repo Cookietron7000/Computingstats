@@ -73,7 +73,7 @@ public class ComputingStatisticsRunner {
          int lenders = Integer.parseInt(line[5]);
          
          // Local variable containing the difference in days.
-         int differenceInDays = Integer.parseInt(line[4]);
+         int differenceInDays = Integer.parseInt(line[4])/86400;
          
          // Add the loan to the arraylist.
         list.add(new Loan(ID, amount, country, differenceInDays, lenders));         
