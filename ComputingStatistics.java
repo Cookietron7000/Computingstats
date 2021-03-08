@@ -74,4 +74,13 @@ public class ComputingStatistics{
         avgLoan = avgLoan / counter;
         return avgLoan;
     }
+    public double largestLoan(String countryNm){//Taylor
+        double largestLoan = 0; //defines a variable to hold the loan amount
+        for (Loan loan: data){ //iterates through the data
+            if(loan.getCountry().equals(countryNm)){ //sifts out the other countries to get the specific one
+                if(loan.getLoanAmount()>largestLoan){largestLoan=loan.getLoanAmount();} //gets the largest loan from the specific country
+            }
+        }
+        return largestLoan; // returns the largest loan from that country
+    }
 }
