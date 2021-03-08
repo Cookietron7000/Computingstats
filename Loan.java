@@ -22,7 +22,7 @@ public class Loan
   public String getCountry(){return country;}
   //setters
   public void setID(int id){ID = id;}
-  public void setDaySToFund(int days){daysToFund = days;}
+  public void setDaysToFund(int days){daysToFund = days;}
   public void setLoanAmount(double loan){loanAmount = loan;}
   public void setNumLenders(int lenders){numLenders = lenders;}
   public void setCountry(String Country){Country = country;}
