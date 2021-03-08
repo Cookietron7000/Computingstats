@@ -12,7 +12,7 @@ public class ComputingStatistics{
 
    //Calclates the total amount funded from all of the loans in the file
    //@return the total loan amount
-   public double totalAmount(){
+   public double totalAmount(){ //returns the total amount
       double amount = 0;
       for(Loan loan:data){amount+=loan.getLoanAmount();}
       return amount;
@@ -22,7 +22,7 @@ public class ComputingStatistics{
    public double avgLoan(){return totalAmount()/data.size();}
 
    //returns the smallest loan
-   public double smallestLoan(){
+   public double smallestLoan(){ //return the smallest loan
       double smallest = Double.POSITIVE_INFINITY;
       for(Loan loan:data){
          if(loan.getLoanAmount()<smallest){smallest=loan.getLoanAmount();}
@@ -30,14 +30,14 @@ public class ComputingStatistics{
       return smallest;
    }
    //returns the largest loan
-   public double largestLoan(){
+   public double largestLoan(){ //return the largest loan
        double largest = Double.NEGATIVE_INFINITY;
        for(Loan loan:data){
            if(loan.getLoanAmount()>largest){largest=loan.getLoanAmount();}
         }
         return largest;
     }
-    public String smallestLoanCountry(){
+    public String smallestLoanCountry(){ //gets the country with the smallest loan
         String smallCountry = " ";
         double smallestLoan = smallestLoan();
         for(Loan loan:data){
@@ -47,7 +47,7 @@ public class ComputingStatistics{
         }
         return smallCountry;
    }
-    public String largestLoanCountry(){
+    public String largestLoanCountry(){ //gets the country with the loan
        String largestCountry = " ";
        double largestLoan = largestLoan();
        for(Loan loan:data){
@@ -57,7 +57,7 @@ public class ComputingStatistics{
         }
         return largestCountry;
     }
-    public int avgDaysToFund(){
+    public int avgDaysToFund(){ //gets the average days to fund
         int totalDays = 0;
         for(Loan loan:data){totalDays+=loan.getDaysToFund();}
         return (int)(double)totalDays/data.size();
