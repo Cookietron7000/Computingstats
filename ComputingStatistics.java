@@ -96,4 +96,10 @@ public class ComputingStatistics{
         return largestLoan; // returns the largest loan from that country
 
     }
+    //variance
+    public double variance(){
+        return 0.0;
+    }
+    //standard deviation (the square root of the variance)
+    public double standardDeviation(){return Math.sqrt(variance());}
 }
